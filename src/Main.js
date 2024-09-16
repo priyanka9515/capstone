@@ -5,10 +5,14 @@ import { Link } from "react-router-dom";
 class Main extends Component {
   render() {
     return (
-      <div className="Main" style={{ fontSize: 80 }}>
+    
+        
+      <div className="Main" style={{ fontSize: 60 }}>
+        <div style ={{fontSize:80}}>PROBSOLVE</div>
         FIND YOUR BEST LAWYER
         <div style={{ marginTop: 100, fontSize: 40 }}> ARE YOU A?</div>
         <div className="Button">
+          <Link to = "/UserForm">
           <Button
             style={{
               backgroundColor: "white",
@@ -20,6 +24,7 @@ class Main extends Component {
           >
             Lawyer
           </Button>
+          </Link>
           <Link to="/Signup">
             <Button
               style={{
@@ -35,6 +40,7 @@ class Main extends Component {
           </Link>
         </div>
       </div>
+      
     );
   }
 }
